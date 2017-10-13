@@ -64,12 +64,14 @@ public class Test {
                 minebuster.turnLeft();
                 minebuster.turnLeft();
             }
+            //if the front isn't clear and the robot can pick something he will turn left and move when the front is clear
             if (!minebuster.frontIsClear() && !minebuster.canPickThing()) {
                 minebuster.turnLeft();
                 minebuster.turnLeft();
                 while (minebuster.frontIsClear()) {
                     minebuster.move();
                 }
+                //the robot turns left to face east instead of west
                 minebuster.turnLeft();
                 minebuster.turnLeft();
 
