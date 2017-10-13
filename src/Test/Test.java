@@ -9,6 +9,7 @@ import becker.robots.Direction;
 import becker.robots.Robot;
 import becker.robots.Thing;
 import becker.robots.Wall;
+import java.awt.Color;
 
 /**
  *
@@ -24,6 +25,10 @@ public class Test {
         City mineland = new City();
         //new robot
         Robot minebuster = new Robot(mineland, 2, 2, Direction.EAST);
+        //changing the colour of the robot
+        minebuster.setColor(Color.GREEN);
+        //adding a nametag for the robot
+        minebuster.setLabel("MB");
         //placing walls
         new Wall(mineland, 2, 4, Direction.NORTH);
         new Wall(mineland, 2, 5, Direction.NORTH);
@@ -59,18 +64,18 @@ public class Test {
                 minebuster.turnLeft();
                 minebuster.turnLeft();
             }
-            //if the robot is on avenue 8, it will until it can pick up a thing
-            if (minebuster.getAvenue() == 8) {
-                while (!minebuster.canPickThing()) {
+            if (!minebuster.frontIsClear() && !minebuster.canPickThing()) {
+                minebuster.turnLeft();
+                minebuster.turnLeft();
+                while (minebuster.frontIsClear()) {
                     minebuster.move();
                 }
-                //if the robots on avenue 2, it will turn left twice
-                if (minebuster.getAvenue() == 2) {
-                    minebuster.turnLeft();
-                    minebuster.turnLeft();
-                }
+                minebuster.turnLeft();
+                minebuster.turnLeft();
 
             }
+
         }
+
     }
 }
