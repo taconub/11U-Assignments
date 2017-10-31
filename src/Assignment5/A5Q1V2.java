@@ -27,37 +27,57 @@ public class A5Q1V2 {
 
         String trans = "";
         for (int i = 0; i < word.length(); i++) {
-            if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'i' || word.charAt(i) == 'u' || word.charAt(i) == 'o') {
+            if (word.equals("exit")) {
+                break;
+            }
+            //if any of these vowels have been found than the word will be altered
+            if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'u' || word.charAt(i) == 'i' || word.charAt(i) == 'o') {
+                //adding ub prior to the found vowel 
                 trans = trans + "ub" + word.charAt(i);
-                
-                if (word.charAt(i++) == 'o' ) {
-                    //if there's no vowel than it will keep the word as is
-                    trans = trans + word.charAt(i)+ word.charAt(i);
-                
-                if (word.charAt(i++) == 'a' ) 
-                    //if there's no vowel than it will keep the word as is
-                    trans = trans + word.charAt(i)+ word.charAt(i);
-                
-                if (word.charAt(i++) == 'e' ) 
-                    //if there's no vowel than it will keep the word as is
-                    trans = trans + word.charAt(i)+ word.charAt(i);
-                
-                if (word.charAt(i++) == 'u' ) 
-                    //if there's no vowel than it will keep the word as is
-                    trans = trans + word.charAt(i)+ word.charAt(i);
-                
-                if (word.charAt(i++) == 'i' ) 
-                    //if there's no vowel than it will keep the word as is
-                    trans = trans + word.charAt(i)+ word.charAt(i);
-                }else{
-                    trans=trans+word.charAt(i);
+                if (word.charAt(i++) == 'e') {
+                    trans = trans + word.charAt(i);
+                } else {
+                    trans = trans + word.charAt(i);
                 }
-
             } else {
                 //if there's no vowel than it will keep the word as is
                 trans = trans + word.charAt(i);
-                
-                
+            }
+            //if any of these vowels have been found than the word will be altered
+            if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'u' || word.charAt(i) == 'i' || word.charAt(i) == 'o') {
+                if (word.charAt(i++) == 'a') {
+                    trans = trans + word.charAt(i);
+                } else {
+                    trans = trans + word.charAt(i);
+                }
+            } else {
+            }
+            //if any of these vowels have been found than the word will be altered
+            if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'u' || word.charAt(i) == 'i' || word.charAt(i) == 'o') {
+                if (word.charAt(i++) == 'u') {
+                    trans = trans + word.charAt(i);
+                } else {
+                    trans = trans + word.charAt(i);
+                }
+            } else {
+            }
+            //if any of these vowels have been found than the word will be altered
+            if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'u' || word.charAt(i) == 'i' || word.charAt(i) == 'o') {
+                if (word.charAt(i++) == 'o') {
+                    trans = trans + word.charAt(i);
+                } else {
+                    trans = trans + word.charAt(i);
+                }
+            } else {
+            }
+            //if any of these vowels have been found than the word will be altered
+            if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'u' || word.charAt(i) == 'i' || word.charAt(i) == 'o') {
+                if (word.charAt(i++) == 'i') {
+                    trans = trans + word.charAt(i);
+                } else {
+                    trans = trans + word.charAt(i);
+                }
+            } else {
             }
         }
         //print out the translated word
