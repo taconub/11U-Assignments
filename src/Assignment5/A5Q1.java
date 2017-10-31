@@ -28,6 +28,10 @@ public class A5Q1 {
         String transa = "";
         //
         for (int i = 0; i < word.length(); i++) {
+            //if word is exit than stop the program
+            if (word.equals("exit")) {
+                break;
+            }
             //if any of these vowels have been found than the word will be altered
             if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'u' || word.charAt(i) == 'i' || word.charAt(i) == 'o') {
                 //adding ub prior to the found vowel 
