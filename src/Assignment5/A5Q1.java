@@ -19,7 +19,7 @@ public class A5Q1 {
         //create a scanner for input
         Scanner input = new Scanner(System.in);
         //ask the user for a word
-        System.out.println("What's the word you woud like to have translated to ubbi dubbi?");
+        System.out.println("What's the word/phrase you woud like to have translated to ubbi dubbi?");
         //Getting the word
         String word1 = input.nextLine();
         //turning all the letters in the word into lowercase
@@ -28,10 +28,12 @@ public class A5Q1 {
         String trans = "";
         //creating a new string for word with spaces after it so the code works
         String word = word1 + "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ";
+        
         //when there is no vowel, search the next letter
         for (int i = 0; i < word.length(); i++) {
             //if the word is exit, than end the program
             if (word1.equals("exit")) {
+                //telling the user the program is over
                 System.out.println("You have exited the program.");
                 break;
             }
@@ -97,9 +99,11 @@ public class A5Q1 {
             }
         }
         //if word does not equal exit than continue the loop
-        if(!word1.equals("exit")){
-        //print out the translated word
-        System.out.println("Your word in ubbi dubbi is " + trans);
+        if (!word1.equals("exit")) {
+            //print out the translated word
+            System.out.println("Your word/phrase in ubbi dubbi is " + trans + ".");
         }
     }
+    
+
 }
