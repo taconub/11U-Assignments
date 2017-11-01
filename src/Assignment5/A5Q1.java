@@ -31,7 +31,7 @@ public class A5Q1 {
         //when there is no vowel, search the next letter
         for (int i = 0; i < word.length(); i++) {
             //if the word is exit, than end the program
-            if (word.equals("exit")) {
+            if (word1.equals("exit")) {
                 System.out.println("You have exited the program.");
                 break;
             }
@@ -96,7 +96,10 @@ public class A5Q1 {
                 }
             }
         }
+        //if word does not equal exit than continue the loop
+        if(!word1.equals("exit")){
         //print out the translated word
-        System.out.println(trans);
+        System.out.println("Your word in ubbi dubbi is " + trans);
+        }
     }
 }
