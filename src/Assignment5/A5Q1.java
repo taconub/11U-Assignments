@@ -32,6 +32,7 @@ public class A5Q1 {
         for (int i = 0; i < word.length(); i++) {
             //if the word is exit, than end the program
             if (word.equals("exit")) {
+                System.out.println("You have exited the program.");
                 break;
             }
             //if any of these vowels have been found than the word will be altered
