@@ -27,7 +27,7 @@ public class A5Q1 {
         //creating a new string that is blank
         String trans = "";
         //creating a new string for word with spaces after it so the code works
-        String word = word1 + "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ";
+        String word = word1 + "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ";
         //when there is no vowel, search the next letter
         for (int i = 0; i < word.length(); i++) {
             //if the word is exit, than end the program
@@ -61,7 +61,6 @@ public class A5Q1 {
                     //if the next letter is not a a, the word stays a sis
                     trans = trans + word.charAt(i);
                 }
-            } else {
             }
             //if any of these vowels have been found than the word will be altered
             if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'u' || word.charAt(i) == 'i' || word.charAt(i) == 'o') {
@@ -73,7 +72,6 @@ public class A5Q1 {
                     //if the next letter is not a u, the word stays a sis
                     trans = trans + word.charAt(i);
                 }
-            } else {
             }
             //if any of these vowels have been found than the word will be altered
             if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'u' || word.charAt(i) == 'i' || word.charAt(i) == 'o') {
@@ -85,7 +83,6 @@ public class A5Q1 {
                     //if the next letter is not a o, the word stays a sis
                     trans = trans + word.charAt(i);
                 }
-            } else {
             }
             //if any of these vowels have been found than the word will be altered
             if (word.charAt(i) == 'a' || word.charAt(i) == 'e' || word.charAt(i) == 'u' || word.charAt(i) == 'i' || word.charAt(i) == 'o') {
@@ -97,7 +94,6 @@ public class A5Q1 {
                     //if the next letter is not a i, the word stays a sis
                     trans = trans + word.charAt(i);
                 }
-            } else {
             }
         }
         //print out the translated word
