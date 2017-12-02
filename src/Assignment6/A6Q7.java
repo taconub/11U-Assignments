@@ -42,7 +42,7 @@ public class A6Q7 {
                 }
             }
             //creating a loop to allow the numbers to be outputted
-            if (Primes) {
+            if (Primes) { 
                 //using the temporary array to take out all of the non prime numbers
                 temp[index++] = prime;
                 //telling the user all the prime numbers
