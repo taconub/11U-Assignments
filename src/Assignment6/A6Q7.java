@@ -41,7 +41,6 @@ public class A6Q7 {
                     break;
                 }
             }
-            
             //creating a loop to allow the numbers to be outputted
             if (Primes) {
                 //using the temporary array to take out all of the non prime numbers
