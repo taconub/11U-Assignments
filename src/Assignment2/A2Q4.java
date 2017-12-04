@@ -49,7 +49,7 @@ public class A2Q4 {
         new Wall(bremelian, 7, 4, Direction.NORTH);
         new Wall(bremelian, 7, 4, Direction.SOUTH);
         //Adding a label
-        bremfamlamnamjam.setLabel("360");
+        bremfamlamnamjam.setLabel("ur mum");
         //Adding color
         bremfamlamnamjam.setColor(Color.GREEN);
         

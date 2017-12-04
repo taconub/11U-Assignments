@@ -47,17 +47,17 @@ public class A2Q1 {
             //move forward
             pennywise.move();
             //check if on avenue 10
-            while (pennywise.getAvenue() == 10) //move forward
+            if (pennywise.getAvenue() == 10) //move forward
             {
                 pennywise.move();
             }
             //check if on avenue 11
-            while (pennywise.getAvenue() == 11) //move forward
+            if (pennywise.getAvenue() == 11) //move forward
             {
                 pennywise.move();
             }
             //check if on avenue 12
-            while (pennywise.getAvenue() == 12) //move forward
+            if (pennywise.getAvenue() == 12) //move forward
             {
                 pennywise.move();
             }

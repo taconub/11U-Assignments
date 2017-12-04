@@ -69,10 +69,10 @@ public class A4Q4 {
 
         //adding up the total cort of all the expenses
         Double totalprice = foodprice + djprice + hallprice + decorprice + staffprice + miscprice;
-        
+
         //dividing the total price by ticket amount to see how many need to be sold to break even
-        Double breakingeven= totalprice/ticket;
+        Double breakingeven = totalprice / ticket;
         //putting the total price and the amount of tickets that need to be sold onto the screen
-        System.out.println("The total expenses add up to "+ totalprice+" so "+breakingeven+" tickets need to be sold to break even.");
+        System.out.println("The total expenses add up to " + totalprice + " so " + breakingeven + " tickets need to be sold to break even.");
     }
 }
