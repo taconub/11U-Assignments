@@ -104,6 +104,4 @@ public class A5Q1 {
             System.out.println("Your word/phrase in ubbi dubbi is " + trans);
         }
     }
-    
-        
 }
