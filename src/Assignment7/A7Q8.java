@@ -13,30 +13,29 @@ import java.util.Scanner;
  */
 public class A7Q8 {
 
-    public void allDigitsOdd(String inti) {
-        //creating a secondary variable
-        int inty = 0;
-        //
-        if (inti.charAt(0) == '-') {
-            inty = Integer.parseInt(inti);
-            inty = inty * -1;
-        } else {
-            inty = Integer.parseInt(inti);
-        }
+    public void allDigitsOdd(int inty) {
         //creating a second version of the initial integer
         int ger = inty + 0;
         //as long as the integer is larger than 0
         while (inty > 0) {
             //breaking up the integer into the last digit
             inty = inty % 10;
-            //i f the last digit is even           
+            //if the last digit is even           
             if (inty % 2 == 0) {
                 //telling the user there is at least one even digit in the integer
                 System.out.println("There is at least one even digit in the integer.");
                 break;
             }
-            //using the second integer and dividing  it by ten to get rid of the last digit so another digit can be check
+            //if the integer us greater tha 10
+            if(inty > 10){
+            //using the second integer and dividing it by ten to get rid of the last digit so another digit can be check
             inty = ger / 10;
+            }
+            //if the secondary integer is greater than ten
+            if(ger > 10){
+                //dividing the secondary integer by 10
+            ger = ger / 10;
+            }
             //once it is less than ten and none of the digits check were even
             if (inty < 10) {
                 //if the final digit is odd as well
@@ -57,7 +56,7 @@ public class A7Q8 {
         //asking the user what the integer is 
         System.out.println("What's the integer?");
         //getting the integer
-        String integer = in.nextLine();
+        int integer = in.nextInt();
         //using the method 
         methodStarter.allDigitsOdd(integer);
 
