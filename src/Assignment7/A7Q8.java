@@ -16,6 +16,11 @@ public class A7Q8 {
     public void allDigitsOdd(int inty) {
         //creating a second version of the initial integer
         int ger = inty + 0;
+        //if the integer is less than 0
+        if(inty < 0){
+            //multiply it by - 1 to make it positive
+            inty = inty * -1;
+        }
         //as long as the integer is larger than 0
         while (inty > 0) {
             //breaking up the integer into the last digit
