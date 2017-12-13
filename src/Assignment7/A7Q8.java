@@ -17,7 +17,7 @@ public class A7Q8 {
         //creating a second version of the initial integer
         int ger = inty + 0;
         //if the integer is less than 0
-        if(inty < 0){
+        if (inty < 0) {
             //multiply it by - 1 to make it positive
             inty = inty * -1;
         }
@@ -32,14 +32,14 @@ public class A7Q8 {
                 break;
             }
             //if the integer us greater tha 10
-            if(inty > 10){
-            //using the second integer and dividing it by ten to get rid of the last digit so another digit can be check
-            inty = ger / 10;
+            if (inty > 10) {
+                //using the second integer and dividing it by ten to get rid of the last digit so another digit can be check
+                inty = ger / 10;
             }
             //if the secondary integer is greater than ten
-            if(ger > 10){
+            if (ger > 10) {
                 //dividing the secondary integer by 10
-            ger = ger / 10;
+                ger = ger / 10;
             }
             //once it is less than ten and none of the digits check were even
             if (inty < 10) {
@@ -66,5 +66,4 @@ public class A7Q8 {
         methodStarter.allDigitsOdd(integer);
 
     }
-
 }
