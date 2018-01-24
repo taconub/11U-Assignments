@@ -214,24 +214,24 @@ public class FinalAssignmentGame extends JComponent {
         // Any of your pre setup before the loop starts should go here
         //creating blocks to either act as projectiles or barriers for the player
         blocks[0] = new Rectangle(0, 475, WIDTH, HEIGHT);
-        blocks[1] = new Rectangle(750, 400, 50, 15);
-        blocks[2] = new Rectangle(750, 425, 50, 25);
-        blocks[3] = new Rectangle(750, 380, 50, 18);
-        blocks[4] = new Rectangle(900, 350, 50, 24);
-        blocks[5] = new Rectangle(850, 450, 50, 27);
-        blocks[6] = new Rectangle(1000, 425, 50, 25);
-        blocks[7] = new Rectangle(775, 385, 50, 29);
-        blocks[8] = new Rectangle(1100, 350, 50, 21);
+        blocks[1] = new Rectangle(750, 400, 50, 10);
+        blocks[2] = new Rectangle(750, 425, 50, 10);
+        blocks[3] = new Rectangle(750, 380, 50, 10);
+        blocks[4] = new Rectangle(900, 350, 50, 10);
+        blocks[5] = new Rectangle(850, 450, 50, 10);
+        blocks[6] = new Rectangle(1000, 425, 50, 10);
+        blocks[7] = new Rectangle(775, 385, 50, 10);
+        blocks[8] = new Rectangle(1100, 350, 50, 10);
         blocks[9] = new Rectangle(WIDTH - 600, 275, 15, HEIGHT);
         blocks[10] = new Rectangle(0, 475, WIDTH, HEIGHT);
-        blocks[11] = new Rectangle(850, 450, 50, 14);
+        blocks[11] = new Rectangle(850, 450, 50, 10);
         blocks[12] = new Rectangle(1200, 425, 50, 10);
-        blocks[13] = new Rectangle(1500, 385, 50, 18);
-        blocks[14] = new Rectangle(1700, 350, 50, 14);
-        blocks[15] = new Rectangle(1500, 450, 50, 18);
-        blocks[16] = new Rectangle(1500, 400, 50, 13);
-        blocks[17] = new Rectangle(850, 385, 50, 18);
-        blocks[18] = new Rectangle(0, 275, 200, 15);
+        blocks[13] = new Rectangle(1500, 385, 50, 10);
+        blocks[14] = new Rectangle(1700, 350, 50, 10);
+        blocks[15] = new Rectangle(1500, 450, 50, 10);
+        blocks[16] = new Rectangle(1500, 400, 50, 10);
+        blocks[17] = new Rectangle(850, 385, 50, 10);
+        blocks[18] = new Rectangle(0, 275, 200, 10);
         blocks[19] = new Rectangle(0, 0, 0, 0);
         blocks[20] = new Rectangle(0, 0, 0, 0);
     }
@@ -296,7 +296,7 @@ public class FinalAssignmentGame extends JComponent {
                 blocks[17].x = blocks[17].x + blockxdir * block17speed * -1;
             }
             //if the score is between certain numbers
-            if (score > 2000 && score < 2999) {
+            if (score > 2000 && score < 3999) {
                 //increasing the block speed
                 block1speed = 6;
                 block2speed = 4;
@@ -315,8 +315,8 @@ public class FinalAssignmentGame extends JComponent {
                 block16speed = 4;
                 block17speed = 5;
             }
-            //if the score is between certain numbers
-            if (score > 4000 && score < 4999) {
+            //if the score is greater than a certain number
+            if (score > 4000) {
                 //increasing the block speed
                 block1speed = 7;
                 block2speed = 6;
